@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f scripts/ld/hook.mjs && node scripts/ld/hook.mjs --agent claude || true",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
